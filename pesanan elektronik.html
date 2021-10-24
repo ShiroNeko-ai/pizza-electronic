@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+
+</head>
+
+<body>
+
+    <ul style=" text-align: center; border: 2px solid black; padding: 5px;">
+        <li style="display: inline-block; border-right: 2px solid black; padding: 0 40px;">Home</li>
+        <li style="display: inline-block; border-right: 2px solid black; padding: 0 40px;">Generate Link</li>
+        <li style="display: inline-block; border-right: 2px solid black; padding: 0 40px;">Transaction History</li>
+        <li style="display: inline-block; border-right: 2px solid black; padding: 0 40px;">Policy</li>
+        <li style="display: inline-block; border-right: 2px solid black; padding: 0 40px;">Logout</li>
+    </ul>
+
+    <div style="border: 1px solid white; padding: 25px;">
+    </div>
+
+    <div style="float: left; width: 25%; border: 1px solid white;">
+        <img src="kucinganap.png" alt="kucing anap" style="margin-left: 120px;" width="200px"
+            height="200px">
+    </div>
+
+    <div style="float: left; width: 69%; border: 1px solid white">
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Title Here : </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td valign="top">Description : </td>
+                    <td>
+                        <textarea style="resize: none; height:70px; width: 170px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Account Number : </td>
+                    <td> <input type="number"> </td>
+                </tr>
+                <tr>
+                    <td>Bank : </td>
+                    <td>
+                        <select>
+                            <option>BNI</option>
+                            <option>BRI</option>
+                            <option>BCA</option>
+                            <option>Hana Bank</option>
+                            <option>DANA</option>
+                            <option>QRIS</option>
+                            <option>Bank Lain</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Account Holder : </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td valign="top">Transaction : </td>
+                    <td>
+                        <div>
+                            <input type="number">
+                        </div>
+                        <div>
+                            *if the Transaction is for 3 person, Choose 3 form the drop-down list
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Send to Mobile Phone
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Send to Email
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Send to Mobile Phone :
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Your Telephone">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Send to Email : </td>
+                    <td>
+                        <input type="email" placeholder="Your Email"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Generate Nobr Link" style="background: rgb(255, 255, 255); ">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html> 

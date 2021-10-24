@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Praktikum_Form</title>
+        <h1><b>Black Goose Bistro | Pizza-on-Demands</b></h1>
+        <p>Our 12* wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+    </head>
+    <form method="post" action="biodata php">
+        <p>Your Information</p>
+        Name : <input type="text" name="username"/>
+        <br/>
+        Address : <textarea name="address" cols="40" rows="1"></textarea>
+        <br/>
+        Telephone Number : <input type="tel" pattern="\d\d\d\d-\d\d\d\d-\d\d\d\d" name="telephone" placeholder="0819-1100-6565" required>
+        <br/>
+        Email : <input type="email" name="email">
+        <br/>
+        Delivery Instructions : 
+        <br/><textarea name="instructions" cols="40" rows="3"placeholder="No more than 400 characters long" maxlength="400"></textarea>
+        <h3><b>Design Your Dream Pizza : </b></h3>
+        <p>Pizza Specs</p>
+        <p>Crust (Choose One) : </p>
+        <div>
+        <label>
+            <input type="radio" id="Crust1" name="Crust1" value="1">Classic White</label><br>
+        <label>
+            <input type="radio" id="Crust1" name="Crust1" value="1">Multigrain</label><br>
+        <label>
+            <input type="radio" id="Crust1" name="Crust1" value="1">Cheese-stuffed crust</label><br>
+        <label>
+            <input type="radio" id="Crust1" name="Crust1" value="1">Gluten-free</label><br>
+        <p>Toppings (Choose as many as you want)</p>
+        <div>
+            <input type="checkbox" id="topping1" name="topping1" value="topping" checked>Red Sauce<br>
+            <input type="checkbox" id="topping1" name="topping1" value="topping">White Sauce<br>
+            <input type="checkbox" id="topping1" name="topping1" value="topping">Mozarella Cheese<br>
+            <input type="checkbox" id="topping1" name="topping1" value="topping">Pepperoni<br>
+            <input type="checkbox" id="topping1" name="topping1" value="topping">Mushrooms<br>
+            <input type="checkbox" id="topping1" name="topping1" value="topping">Peppers<br>
+            <input type="checkbox" id="topping1" name="topping1" value="topping">Anchovies<br>
+        </div>
+            <br>How many pizzas:<input type="number" min="1" max="10"><br>
+            <input type="submit" name="submit" value="Baking Process!"><input type="reset" name="reset" value="Reset All">
+    </form>
+    <body>
+    </body>
+</html>
